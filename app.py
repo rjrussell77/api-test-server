@@ -26,6 +26,9 @@ def get_users():
 
 @app.route('/posts', methods=['POST'])
 def create_post():
+    auth_header = request.headers.get('Authorization')
+    if not auth_header:
+        return make_response(jsonify({"error": "Unauthorized"}), 401)
     data = request.get_json()
     if not data or 'title' not in data:
         return make_response(jsonify({"error": "Bad Request"}), 400)
@@ -52,4 +55,4 @@ def delete_post(post_id):
     return '', 204
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5001)

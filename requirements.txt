@@ -1,0 +1,38 @@
+# Core Flask Framework
+Flask==3.1.2
+
+# Flask Dependencies (automatically installed with Flask)
+blinker==1.9.0
+click==8.2.1
+itsdangerous==2.2.0
+Jinja2==3.1.6
+MarkupSafe==3.0.2
+Werkzeug==3.1.3
+
+# API Development & Testing
+requests==2.31.0          # For making HTTP requests in tests
+pytest==7.4.3            # Testing framework
+pytest-flask==1.3.0      # Flask testing utilities
+pytest-cov==4.1.0        # Coverage reporting
+
+# Development Tools
+python-dotenv==1.0.0     # Environment variable management
+flask-cors==4.0.0        # Cross-Origin Resource Sharing support
+flask-restful==0.3.10    # RESTful API extensions
+
+# Data Validation & Serialization
+marshmallow==3.20.1      # Object serialization/deserialization
+jsonschema==4.19.2       # JSON schema validation
+
+# Optional: Database Support (uncomment if needed)
+# SQLAlchemy==2.0.23     # ORM
+# Flask-SQLAlchemy==3.1.1 # Flask SQLAlchemy extension
+# psycopg2-binary==2.9.9 # PostgreSQL adapter (if using PostgreSQL)
+
+# Optional: Authentication (uncomment if needed)
+# PyJWT==2.8.0           # JWT token handling
+# bcrypt==4.0.1          # Password hashing
+
+# Optional: API Documentation (uncomment if needed)
+# flask-swagger-ui==4.11.1 # Swagger UI for API docs
+# flasgger==0.9.7.1      # Swagger/OpenAPI support
